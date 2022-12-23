@@ -1,4 +1,4 @@
-console.log("hello");
+// console.log("hello");
 // console.log(window);
 // let isim = "nuran"
 // console.log(typeof isim);
@@ -121,3 +121,20 @@ console.log("hello");
 //  // !if else : İki seçeneğin olduğu yerlerde kullanılır.
 //  //!if else if else: 2 den fazla seçeneğin olduğu yerde kullanılır
 //  //!if if if
+
+// //?Beden kitle Endeksi hesaplama
+// let kilo = Number(prompt("Kilonuzu giriniz"));
+// let boy = Number(prompt("Boyunuzu metre cinsinden giriniz"));
+// let sonuc = kilo/(boy*2);
+
+// if(sonuc < 18.5){
+//     console.log("ideal kilonun altında")
+// }else if(sonuc >= 18.5 && sonuc <= 24.9){
+//     console.log("ideal kilo")
+// }else if(sonuc >= 25 && sonuc <= 29.9){
+//     console.log("ideal kilonun üstünde");
+// }else if(sonuc >= 30 && sonuc <= 39.9){
+//     console.log("ideal kilonun çok üstünde obez");
+// }else if(sonuc >= 40){
+//     console.log("ideal kilonun çok üsütnde morbid obez");
+// }
