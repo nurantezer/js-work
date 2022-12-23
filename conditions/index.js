@@ -138,3 +138,25 @@
 // }else if(sonuc >= 40){
 //     console.log("ideal kilonun çok üsütnde morbid obez");
 // }
+//Benzi İstasyonu
+//1-Dizel : 24.53
+//2-Benzin : 22.25
+//3-LPG : 11.1
+//Gelen müşteriden alacağımız bilgiler;
+//Yakıt tipi
+//Yüklenecek yakıt litresi
+
+//!"\r\n" Bu ifade benim alt satıra geçmemi sağlıyor.bunu bir değişkene atıyarak tekrar tekrar getirmeyi sağlayacağım.
+
+let dizel = 24.53 , benzin = 22.25 , lpg = 11.1;
+const yeniSatir = "\r\n" ;
+
+const yakitMetni = "1-Dizel"+yeniSatir
++"2-Benzin"+yeniSatir
++"3-LPG"+yeniSatir
++"Yakit türünü seçiniz;";
+
+
+
+
+
