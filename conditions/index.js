@@ -254,44 +254,44 @@
 100 puanı ösym veriyor.
 okul puanı nax 60 veriyor
 */
-let turkceDogru , turkceYanlis = 0;
-let matematikDogru , matematikYanlis = 0;
-let sosyalDogru , sosyalYanlis = 0;
-let fenDogru , fenYanlis = 0;
-let puan = 0
-let okulPuani = 0
+// let turkceDogru , turkceYanlis = 0;
+// let matematikDogru , matematikYanlis = 0;
+// let sosyalDogru , sosyalYanlis = 0;
+// let fenDogru , fenYanlis = 0;
+// let puan = 0
+// let okulPuani = 0
 
-let yeniSatir = "\r\n";
-let mesaj = "Tyt Puan Hesaplama uygulamasina hosgeldiniz"+yeniSatir+"1-Puan hesapla"+yeniSatir+"2-Cikis yap";
-//  alert(mesaj);
-let secim =prompt(mesaj);
-switch (secim) {
-    case "1":
-        okulPuani = Number(prompt("Okul puaninizi giriniz:"));
-        turkceDogru =Number(prompt("Türkce dogru sayisini"));
-        turkceYalnis= Number(prompt("Turkce yalnis sayısı"));
+// let yeniSatir = "\r\n";
+// let mesaj = "Tyt Puan Hesaplama uygulamasina hosgeldiniz"+yeniSatir+"1-Puan hesapla"+yeniSatir+"2-Cikis yap";
+// //  alert(mesaj);
+// let secim =prompt(mesaj);
+// switch (secim) {
+//     case "1":
+//         okulPuani = Number(prompt("Okul puaninizi giriniz:"));
+//         turkceDogru =Number(prompt("Türkce dogru sayisini"));
+//         turkceYalnis= Number(prompt("Turkce yalnis sayısı"));
 
-        matematikDogru =Number(prompt("Matematik dogru sayisini"));
-        matematikYalnis= Number(prompt("Matematik yalnis sayısı"));
+//         matematikDogru =Number(prompt("Matematik dogru sayisini"));
+//         matematikYalnis= Number(prompt("Matematik yalnis sayısı"));
 
-        sosyalDogru =Number(prompt("Sosyal dogru sayisini"));
-        sosyalYalnis= Number(prompt("Sosyal yalnis sayısı"));
+//         sosyalDogru =Number(prompt("Sosyal dogru sayisini"));
+//         sosyalYalnis= Number(prompt("Sosyal yalnis sayısı"));
 
-        fenDogru =Number(prompt("Fen dogru sayisini"));
-        fenYalnis= Number(prompt("Fen yalnis sayısı"));
+//         fenDogru =Number(prompt("Fen dogru sayisini"));
+//         fenYalnis= Number(prompt("Fen yalnis sayısı"));
 
-        let dogruSayisi = turkceDogru+matematikDogru+sosyalDogru+fenDogru;
-        let yanlisSayisi = turkceYanlis+matematikYanlis+sosyalYanlis+fenYanlis;
-        let kalanDogruSayisi = dogruSayisi - (yanlisSayisi/4);
-        puan = (kalanDogruSayisi*4) + 100 + okulPuani;
-        alert("TYT Puaniniz:" + puan);
-        break;
-        case "2":
-            alert("Uygulamadan cikis yapildi");
-        break;
-        alert("Lütfen gecerli aralikta deger giriniz!")
-    default:
-        break;
-}
+//         let dogruSayisi = turkceDogru+matematikDogru+sosyalDogru+fenDogru;
+//         let yanlisSayisi = turkceYanlis+matematikYanlis+sosyalYanlis+fenYanlis;
+//         let kalanDogruSayisi = dogruSayisi - (yanlisSayisi/4);
+//         puan = (kalanDogruSayisi*4) + 100 + okulPuani;
+//         alert("TYT Puaniniz:" + puan);
+//         break;
+//         case "2":
+//             alert("Uygulamadan cikis yapildi");
+//         break;
+//         alert("Lütfen gecerli aralikta deger giriniz!")
+//     default:
+//         break;
+// }
 
 
