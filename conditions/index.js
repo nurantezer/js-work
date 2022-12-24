@@ -189,6 +189,25 @@
 // } else {
 //   alert("Lütfen geçerli bir yakit türü seçiniz");
 // }
+                 //!Switch-Case
+let sayi= prompt("Lütfen 1 ile 5 arasında bir sayi giriniz:");
+
+switch (sayi) {
+    case "1":
+        console.log("Girilen sayi 1'dir");
+        break;
+    case "2":
+        console.log("Girilen sayi 2'dir");
+    case "3":
+        console.log("Girilen sayi 3'tür");
+    case "4":
+        console.log("Girilen sayi 4'tür");
+    case "5":
+        console.log("Girilen sayİ 5'tir");    
+    default:
+        console.log("Girilen sayi 1 ile 5 arasında olmalidir");
+        break;
+}
 
 
 
