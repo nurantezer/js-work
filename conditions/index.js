@@ -146,17 +146,49 @@
 //Yakıt tipi
 //Yüklenecek yakıt litresi
 
-//!"\r\n" Bu ifade benim alt satıra geçmemi sağlıyor.bunu bir değişkene atıyarak tekrar tekrar getirmeyi sağlayacağım.
+// //!"\r\n" Bu ifade benim alt satıra geçmemi sağlıyor.bunu bir değişkene atıyarak tekrar tekrar getirmeyi sağlayacağım.
 
-let dizel = 24.53 , benzin = 22.25 , lpg = 11.1;
-const yeniSatir = "\r\n" ;
+// let dizel = 24.53 , benzin = 22.25 , lpg = 11.1;
+// const yeniSatir = "\r\n" ;
 
-const yakitMetni = "1-Dizel"+yeniSatir
-+"2-Benzin"+yeniSatir
-+"3-LPG"+yeniSatir
-+"Yakit türünü seçiniz;";
+// const yakitMetni = "1-Dizel"+yeniSatir
+// +"2-Benzin"+yeniSatir
+// +"3-LPG"+yeniSatir
+// +"Yakit türünü seçiniz;";
 
-
+// let YakitTipi = prompt(yakitMetni);
+// if (YakitTipi == "1" || YakitTipi == "2" || YakitTipi == "3") {
+//   let yakitLitresi = +prompt("Yakit litresini giriniz");
+//   let bakiye = +prompt("Bakiyenizi giriniz");
+//   //!string değerler gireceğim için biri tırnak içine aldım.
+//   if (YakitTipi == "1") {
+//     let odenecekTutar = dizel * yakitLitresi;
+//     if (odenecekTutar < bakiye) {
+//       bakiye = bakiye - odenecekTutar;
+//       alert(
+//         "Yakit alma işlemi başarili" + yeniSatir + "Kalan bakiye:" + bakiye
+//       );
+//     } else {
+//       alert(
+//         "Bakiyeniz yeterli değildir." +
+//           yeniSatir +
+//           "Ödenecek tutar:" +
+//           odenecekTutar +
+//           yeniSatir +
+//           "Bakiye:" +
+//           bakiye +
+//           yeniSatir +
+//           "Eksik Tutar:" +
+//           (odenecekTutar - bakiye)
+//       );
+//     }
+//   } else if (YakitTipi == "2") {
+//   } else if (YakitTipi == "3") {
+//   }
+//   //burası tabiki dışarıda kalacak
+// } else {
+//   alert("Lütfen geçerli bir yakit türü seçiniz");
+// }
 
 
 
