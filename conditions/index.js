@@ -189,25 +189,60 @@
 // } else {
 //   alert("Lütfen geçerli bir yakit türü seçiniz");
 // }
-                 //!Switch-Case
-let sayi= prompt("Lütfen 1 ile 5 arasında bir sayi giriniz:");
+//                  //!Switch-Case
+// let sayi= prompt("Lütfen 1 ile 5 arasında bir sayi giriniz:");
 
-switch (sayi) {
+// switch (sayi) {
+//     case "1":
+//         console.log("Girilen sayi 1'dir");
+//         break;
+//     case "2":
+//         console.log("Girilen sayi 2'dir");
+            // break;
+//     case "3":
+//         console.log("Girilen sayi 3'tür");
+//     case "4":
+//         console.log("Girilen sayi 4'tür");
+//     case "5":
+//         console.log("Girilen sayİ 5'tir");    
+//     default:
+//         console.log("Girilen sayi 1 ile 5 arasında olmalidir");
+//         break;
+// }
+ /*
+ 1-Bakiye görüntüleme
+ 2-Para çekme
+ 3-Para yatırma
+ 4-Çıkış*/
+
+let yeniSatir= "\r\n";
+let bakiye = 1000;
+let metin = "1-Bakiye Görüntüleme"+yeniSatir+"2-Para Çekme"+yeniSatir+"3-Para Yatırma"+yeniSatir+"4-Çıkış"+yeniSatir+"Lütfen bir değer seçiniz"
+
+let secim = prompt(metin);
+switch (secim) {
     case "1":
-        console.log("Girilen sayi 1'dir");
+        alert("Bakiyeniz:" + bakiye);
         break;
     case "2":
-        console.log("Girilen sayi 2'dir");
+        let cekilecekTutar = Number(prompt("Çekmek istediğiniz tutarı giriniz:"));
+        if(cekilecekTutar<bakiye){
+            bakiye = bakiye-cekilecekTutar;
+            alert("Kalan bakiye:" +bakiye);
+        }else{
+            alert("Bakiyenizden fazla para çekemezsiniz!"+yeniSatir+"Bakiyeniz :"+bakiye + " " + "Cekilecek Tutar:" + cekilecekTutar);
+        }
+    break;
     case "3":
-        console.log("Girilen sayi 3'tür");
+    let yatirilacakTutar = Number(prompt("Yatirilacak tutari giriniz:"));
+    bakiye = bakiye + yatirilacakTutar;
+    alert("Güncel bakiyeniz:" + bakiye);
+    break;
     case "4":
-        console.log("Girilen sayi 4'tür");
-    case "5":
-        console.log("Girilen sayİ 5'tir");    
+        console.log("Sistemnden cikis yapilmisitir");
+    break;
     default:
-        console.log("Girilen sayi 1 ile 5 arasında olmalidir");
+        console.log("Lütfen 1-4 arasinda değer giriniz");
         break;
 }
-
-
 
