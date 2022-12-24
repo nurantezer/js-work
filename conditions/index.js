@@ -215,34 +215,83 @@
  3-Para yatırma
  4-Çıkış*/
 
-let yeniSatir= "\r\n";
-let bakiye = 1000;
-let metin = "1-Bakiye Görüntüleme"+yeniSatir+"2-Para Çekme"+yeniSatir+"3-Para Yatırma"+yeniSatir+"4-Çıkış"+yeniSatir+"Lütfen bir değer seçiniz"
+// let yeniSatir= "\r\n";
+// let bakiye = 1000;
+// let metin = "1-Bakiye Görüntüleme"+yeniSatir+"2-Para Çekme"+yeniSatir+"3-Para Yatırma"+yeniSatir+"4-Çıkış"+yeniSatir+"Lütfen bir değer seçiniz"
 
-let secim = prompt(metin);
+// let secim = prompt(metin);
+// switch (secim) {
+//     case "1":
+//         alert("Bakiyeniz:" + bakiye);
+//         break;
+//     case "2":
+//         let cekilecekTutar = Number(prompt("Çekmek istediğiniz tutarı giriniz:"));
+//         if(cekilecekTutar<bakiye){
+//             bakiye = bakiye-cekilecekTutar;
+//             alert("Kalan bakiye:" +bakiye);
+//         }else{
+//             alert("Bakiyenizden fazla para çekemezsiniz!"+yeniSatir+"Bakiyeniz :"+bakiye + " " + "Cekilecek Tutar:" + cekilecekTutar);
+//         }
+//     break;
+//     case "3":
+//     let yatirilacakTutar = Number(prompt("Yatirilacak tutari giriniz:"));
+//     bakiye = bakiye + yatirilacakTutar;
+//     alert("Güncel bakiyeniz:" + bakiye);
+//     break;
+//     case "4":
+//         console.log("Sistemnden cikis yapilmisitir");
+//     break;
+//     default:
+//         console.log("Lütfen 1-4 arasinda değer giriniz");
+//         break;
+// }
+
+/* SORULAR
+1-Türkçe 40 -4 puan
+2-Matematik 40
+3-Sosyal Bilgiler20
+4-Fen Bilimleri20
+100 puanı ösym veriyor.
+okul puanı nax 60 veriyor
+*/
+let turkceDogru , turkceYanlis = 0;
+let matematikDogru , matematikYanlis = 0;
+let sosyalDogru , sosyalYanlis = 0;
+let fenDogru , fenYanlis = 0;
+let puan = 0
+let okulPuani = 0
+
+let yeniSatir = "\r\n";
+let mesaj = "Tyt Puan Hesaplama uygulamasina hosgeldiniz"+yeniSatir+"1-Puan hesapla"+yeniSatir+"2-Cikis yap";
+//  alert(mesaj);
+let secim =prompt(mesaj);
 switch (secim) {
     case "1":
-        alert("Bakiyeniz:" + bakiye);
+        okulPuani = Number(prompt("Okul puaninizi giriniz:"));
+        turkceDogru =Number(prompt("Türkce dogru sayisini"));
+        turkceYalnis= Number(prompt("Turkce yalnis sayısı"));
+
+        matematikDogru =Number(prompt("Matematik dogru sayisini"));
+        matematikYalnis= Number(prompt("Matematik yalnis sayısı"));
+
+        sosyalDogru =Number(prompt("Sosyal dogru sayisini"));
+        sosyalYalnis= Number(prompt("Sosyal yalnis sayısı"));
+
+        fenDogru =Number(prompt("Fen dogru sayisini"));
+        fenYalnis= Number(prompt("Fen yalnis sayısı"));
+
+        let dogruSayisi = turkceDogru+matematikDogru+sosyalDogru+fenDogru;
+        let yanlisSayisi = turkceYanlis+matematikYanlis+sosyalYanlis+fenYanlis;
+        let kalanDogruSayisi = dogruSayisi - (yanlisSayisi/4);
+        puan = (kalanDogruSayisi*4) + 100 + okulPuani;
+        alert("TYT Puaniniz:" + puan);
         break;
-    case "2":
-        let cekilecekTutar = Number(prompt("Çekmek istediğiniz tutarı giriniz:"));
-        if(cekilecekTutar<bakiye){
-            bakiye = bakiye-cekilecekTutar;
-            alert("Kalan bakiye:" +bakiye);
-        }else{
-            alert("Bakiyenizden fazla para çekemezsiniz!"+yeniSatir+"Bakiyeniz :"+bakiye + " " + "Cekilecek Tutar:" + cekilecekTutar);
-        }
-    break;
-    case "3":
-    let yatirilacakTutar = Number(prompt("Yatirilacak tutari giriniz:"));
-    bakiye = bakiye + yatirilacakTutar;
-    alert("Güncel bakiyeniz:" + bakiye);
-    break;
-    case "4":
-        console.log("Sistemnden cikis yapilmisitir");
-    break;
+        case "2":
+            alert("Uygulamadan cikis yapildi");
+        break;
+        alert("Lütfen gecerli aralikta deger giriniz!")
     default:
-        console.log("Lütfen 1-4 arasinda değer giriniz");
         break;
 }
+
 
