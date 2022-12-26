@@ -294,4 +294,12 @@ okul puanı nax 60 veriyor
 //         break;
 // }
 
-
+                //for//
+//1 den 10 a kadar yazdıralım//
+// for(let i=1 ; i<=10 ; i++){
+//     console.log(i);
+// }
+//1 den 10 a kadar ciftleri yazdıralım
+// for(let i=0 ; i<=10 ; i=i+2){
+//     console.log(i);
+// }
