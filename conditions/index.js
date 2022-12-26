@@ -341,13 +341,37 @@ okul puanı nax 60 veriyor
 //     sayac++;
 // }
 
-let sayac = 1;
-while (true) {
-    console.log(sayac);
-    if(sayac == 7){
-        break;
-    }
+// let sayac = 1;
+// while (true) {
+//     console.log(sayac);
+//     if(sayac == 7){
+//         break;
+//     }
     
-    sayac++;
+//     sayac++;
     
-}
+// }
+
+               //do While
+// let sayac = 1;
+// do{
+// console.log(sayac);
+// sayac++;
+// }while(sayac <= 10);
+
+// let yas = 23
+// do{
+// console.log("Ehliyet alabilirsiniz");
+
+// }while(yas >= 25);
+// // //!koşul dogru olmasada bir kere çalıştırdı.O yüzden kullanım yerini mantıklı tain etmek lazım
+
+// let sayac = 1;
+// let toplam = 0;
+// do{
+// if(sayac%2 == 1){
+//     toplam+=sayac;
+// }
+// sayac++;
+// }while(sayac<=20)
+// console.log(`toplam: ${toplam}`);
