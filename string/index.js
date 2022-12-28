@@ -42,3 +42,11 @@
 
 // let str2 =str1.slice(1,5)
 // console.log(str2);
+
+// let email = 'nurantexer68@gmail.com'
+// console.log(email.includes('@'));
+// if(email.includes('@')){
+//     console.log('Email is valid');
+// }else{
+//     console.log('invalid email');
+// }
