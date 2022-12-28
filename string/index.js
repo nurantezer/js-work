@@ -22,8 +22,23 @@
 // for(i =str.length-1; i>= 0; i--){
 //     console.log(str[i],i);
 // }
-let a = 5
-let b = a
-console.log(a,b);
-a = 10;
-console.log(a,b);
+// let a = 5
+// let b = a
+// console.log(a,b);
+// a = 10;
+// console.log(a,b);
+
+// alert("merhaba\tdünya")
+// console.log("merhaba\tdünya");
+// console.log('merhaba\\dünya');
+// console.log('merhaba\ndünya');
+
+// let str1= "clarusway";
+// console.log(str1.slice(1,5));
+// console.log(str1.slice(-8,-4));
+// console.log(str1.slice(-5,8));
+// console.log(str1.slice(0));
+// console.log(str1.slice(5));
+
+// let str2 =str1.slice(1,5)
+// console.log(str2);
