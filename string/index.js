@@ -10,5 +10,20 @@
 // let str5 = str1 +" "+ str2
 // console.log(str5);
 
-let str = 'Hello world'
-console.log(str[str.length-1]);
+// let str = 'Hello world'
+// console.log(str[str.length-1]);
+
+// // /str nin tüm elemanlarını for döngüsü ile yazdır
+
+// for(i = 0; i < str.length; i++){
+//     console.log(str[i]);
+// }
+
+// for(i =str.length-1; i>= 0; i--){
+//     console.log(str[i],i);
+// }
+let a = 5
+let b = a
+console.log(a,b);
+a = 10;
+console.log(a,b);
