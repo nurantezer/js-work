@@ -138,3 +138,11 @@
 // }else{
 //   alert(`${sayi} asal değildir`)
 // }
+
+// let sayi = Number(prompt("Bir sayi giriniz"));
+// let carpım =1;
+
+// for(let i=1; i<=sayi; i++){
+//   carpım*=i
+// }
+// console.log(`carpim: ${carpım}`);
