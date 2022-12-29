@@ -174,8 +174,39 @@
 // }
 // topla();
 
-//!Parametreli method tanımlamak
-function yazdir(isim,soyisim) {
-  console.log(`${isim} ${soyisim}`);
+// //!Parametreli method tanımlamak
+// function yazdir(isim,soyisim) {
+//   console.log(`${isim} ${soyisim}`);
+// }
+// yazdir("nuran", "tezer")
+// yazdir("ali" ,"yılmaz")
+
+// function cube(sayi) {
+//   console.log(sayi*sayi*sayi);
+// }
+// cube(5);
+// cube(3);
+
+// let yas = Number(prompt("yasinizi giriniz"));
+// function kontrolEt(yas) {
+//   if(yas>18){
+//     console.log("ehliyet alabilirsiniz");
+//   }else{
+//     console.log("ehliyet alamazsınız");
+//   }
+// }
+// kontrolEt(yas);
+
+let donenDeger = cube(3);
+console.log(donenDeger);
+kareAl(donenDeger)
+
+function kareAl(sayi) {
+  let sonuc = sayi*sayi;
+  console.log(sonuc);
 }
-yazdir("nuran", "tezer")
+
+function cube(sayi) {
+  let sonuc = sayi*sayi*sayi;
+  return sonuc;
+}
