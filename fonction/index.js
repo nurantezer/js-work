@@ -101,11 +101,25 @@
 //  console.log(compute(2, 4, "*"));
 //  console.log(compute(3, 1, "+"));
 
-let sayac = 1
+// //!break tamamen kırar
+// let sayac = 1
+// while (sayac<=10) {
+//   console.log(sayac);
+//   if(sayac==8){
+//     break;
+//   }
+//   sayac++
+// }
+
+//!continue sayıyı kırıp geri kalanını yazdırı.
+let sayac = 0
 while (sayac<=10) {
-  console.log(sayac);
-  if(sayac==8){
+  sayac++
+  if(sayac>10){
     break;
   }
-  sayac++
+  if(sayac==8){
+    continue;
+  }
+  console.log(sayac);
 }
