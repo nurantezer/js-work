@@ -146,3 +146,18 @@
 //   carpım*=i
 // }
 // console.log(`carpim: ${carpım}`);
+
+//!153 sayısı armstrong 153= 1*1*1+3*3*3*+5*5*5
+
+let sayi = prompt("sayı giriniz");
+let toplam = 0
+for(let i = 0; i<sayi.length; i++){
+  let rakam = sayi.charAt(i);
+  toplam+=rakam*rakam*rakam;
+}
+
+if(sayi==toplam){
+  alert("Armstrong sayısıdır");
+}else{
+  alert("Armstrong sauısı değildir");
+}
