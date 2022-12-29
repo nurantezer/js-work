@@ -147,17 +147,35 @@
 // }
 // console.log(`carpim: ${carpım}`);
 
-//!153 sayısı armstrong 153= 1*1*1+3*3*3*+5*5*5
+// //!153 sayısı armstrong 153= 1*1*1+3*3*3*+5*5*5
 
-let sayi = prompt("sayı giriniz");
-let toplam = 0
-for(let i = 0; i<sayi.length; i++){
-  let rakam = sayi.charAt(i);
-  toplam+=rakam*rakam*rakam;
-}
+// let sayi = prompt("sayı giriniz");
+// let toplam = 0
+// for(let i = 0; i<sayi.length; i++){
+//   let rakam = sayi.charAt(i);
+//   toplam+=rakam*rakam*rakam;
+// }
 
-if(sayi==toplam){
-  alert("Armstrong sayısıdır");
-}else{
-  alert("Armstrong sauısı değildir");
+// if(sayi==toplam){
+//   alert("Armstrong sayısıdır");
+// }else{
+//   alert("Armstrong sauısı değildir");
+// }
+
+//!Parametresiz ve geriye değer döndürmeyen metor tanımlamak
+
+// function yazdir(){
+//   console.log("nuran");
+// }
+// yazdir();
+
+// function topla(){
+//   console.log(5+7);
+// }
+// topla();
+
+//!Parametreli method tanımlamak
+function yazdir(isim,soyisim) {
+  console.log(`${isim} ${soyisim}`);
 }
+yazdir("nuran", "tezer")
