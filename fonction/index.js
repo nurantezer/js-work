@@ -111,15 +111,30 @@
 //   sayac++
 // }
 
-//!continue sayıyı kırıp geri kalanını yazdırı.
-let sayac = 0
-while (sayac<=10) {
-  sayac++
-  if(sayac>10){
-    break;
-  }
-  if(sayac==8){
-    continue;
-  }
-  console.log(sayac);
-}
+// //!continue sayıyı kırıp geri kalanını yazdırı.
+// let sayac = 0
+// while (sayac<=10) {
+//   sayac++
+//   if(sayac>10){
+//     break;
+//   }
+//   if(sayac==8){
+//     continue;
+//   }
+//   console.log(sayac);
+// }
+//                     //!asal sayı
+// let sayi = Number(prompt("lütfen bir sayı giriniz"))
+
+// let sonuc = true
+// for(let i=2; i<=Math.floor(sayi/2); i++){
+//   if(sayi%i==0){
+//   sonuc = false;
+//   break;
+//   }
+// }
+// if(sonuc){
+//   alert(`${sayi} asaldır`)
+// }else{
+//   alert(`${sayi} asal değildir`)
+// }
