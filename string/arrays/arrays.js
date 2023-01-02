@@ -90,3 +90,12 @@ console.log(cars);
 
 cars.splice(3,1,"maseratti")
 console.log(cars);
+
+//dizinin tamamını ters çevirme
+cars.reverse()
+console.log(cars);
+
+
+
+
+
