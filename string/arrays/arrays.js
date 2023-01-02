@@ -55,4 +55,20 @@ console.log(tarik);
 const lastEl = names1[5]
 console.log(lastEl);
 
+//diziye veri yazma
+// names1[2] = "Levent"
+names1[2] = names1[2].toUpperCase()//assigning yapıldığında etki eder.
+console.log(names1);
+
+//diziler farklı veri tiplerini bir arada saklayabilir
+
+const ageArr = [22,44,55]
+const people = ["john", "varmont", new Date().getFullYear()-1990,true,ageArr]
+console.log(people);
+
+console.log(people[4]);
+
+console.log(++people[4][1]);
+console.log(people);
+console.log(ageArr);
 
