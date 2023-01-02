@@ -72,3 +72,21 @@ console.log(++people[4][1]);
 console.log(people);
 console.log(ageArr);
 
+//diziyi degistiren metotlar
+const cars= ["bmw","mercedes","fiat","anadol"]
+console.log(cars.pop());
+
+console.log("len:",cars.push("lexus"));
+console.log(cars);
+
+cars.unshift("toog")
+console.log(cars);
+
+console.log(cars.shift());
+console.log(cars);
+
+cars.splice(1,0,"vw")
+console.log(cars);
+
+cars.splice(3,1,"maseratti")
+console.log(cars);
