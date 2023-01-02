@@ -24,3 +24,18 @@ console.log(s2,s3);
 console.log(s3.charAt()); //0.indexi getirdi
 console.log(s3.charAt(4));
 console.log(s3.charAt(s3.length - 1));//d
+
+//includes()- case sensetive
+const word = "to be or not to be, thas is the question"
+console.log(word.includes("to be"));
+console.log(word.includes("That"));
+console.log(word.includes("")); 
+console.log(word.includes(`to be`,13)); //13ten sora to be
+
+//indexOf() lastIndexOf() -case sensetive
+const tobeIndex = word.indexOf(`or`)
+console.log(tobeIndex);
+console.log(word.indexOf(`be`));//baş
+console.log(word.lastIndexOf(`be`));//en son
+console.log(word.lastIndexOf(`BE`));//-1 bulamadığı zaman döndürüyor.
+
