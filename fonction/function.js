@@ -79,3 +79,66 @@
 //     console.log(`FIBONACCI(${n}) = ${fibo(n)}`);
 // }
 
+// //*enes hoca
+// function yazdir (){
+//     console.log("nuran");
+// }
+// yazdir()
+
+//*parametreli metot tanımlama
+// function yazdir(isim, soyisim){
+//     console.log(isim + " " + soyisim);
+// }
+// yazdir("nuran", "tezer")
+// yazdir("erhan", "tezer")
+
+// cube(5)
+// cube(3)
+// function cube(sayi){
+//     console.log(sayi*sayi*sayi);
+// }
+
+// let yas = Number(prompt("yaşınızı giriniz"))
+
+// kontrolEt(yas);
+//  function kontrolEt(yas) {
+//     if(yas > 18){
+//         console.log("ehliyet alabilirsiniz");
+//     }else{
+//         console.log("ehliyet alamazsınız");
+//     }
+//  }
+
+//*geriye değer döndüren metot tanımlamak return
+//*Bir değeri metodun dışarısına cıkarmak, taşımak için kullanılır.
+//*Bir metodu bitiren anahtar kelimedir
+
+// let donenDeger = cube(2);
+// kareAl(donenDeger);
+
+// function kareAl(sayi) {
+//     let sonuc = sayi*sayi;
+//     console.log(sonuc);
+// }
+
+// function cube(sayi) {
+//     let sonuc = sayi*sayi*sayi;
+//     return sonuc
+// }
+
+let metin = "Şuanda Yalova'da JAvascript eğitimi çekmekteyim.";
+
+let harf = prompt("harf giriniz");
+let sonuc = bul(harf);
+alert("Harf sayısı:" + sonuc);
+
+function bul(harf) {
+    let toplam = 0;
+    for(let i = 0; i<metin.length; i++){
+        if(metin.charAt(i).toLowerCase()===harf.toLowerCase()){
+            toplam+=1;
+        }
+    
+    }
+     return toplam;
+}
