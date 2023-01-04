@@ -62,3 +62,38 @@ const ogrenciBulForOf = function(isim){
 
 let ogrName = prompt(`Ogrenci adini giriniz:`).toLocaleLowerCase();
 console.log(ogrenciBulForOr(ogrName));
+
+ //*ITERATİON
+
+ //*dizideki her bir fiyati konsola bastiriniz
+
+ const fiyatlar = [100, 250, 50, 89];
+
+ fiyatlar.forEach(yazdir);
+
+ function yazdir(v){
+    console.log(v);
+ }
+
+ console.log(`*********************`);
+ 
+ //! Arrow function kullanılarak çözüm
+  fiyatlar.forEach((value) => console.log((value));
+
+  //*Fiyatlar dizisindekilerin toplamını konsola yazdırınnız
+
+  let toplam = 0;
+  fiyatlar.forEach((fiyat) => (toplam += fiyat));
+  console.log(`Toplam:`, toplam);
+
+  //!Not: forEch metodu void bir metottur.
+  //! (Yani herhangi bir değer döndürmez.)
+  console.log(fiyatlar.forEach((fiyat) => (toplam += fiyat)));//!undefined
+
+  let toplam1 = 0;
+  fiyatlar.forEach((deger, indis, dizi) => {
+    toplam1 += deger;
+    console.log(`${indis}.iterasyon taplami:${toplam1}`);
+    dizi[indis] = deger +10;
+  })
+  console.log(fiyatlar);
