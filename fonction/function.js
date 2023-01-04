@@ -126,19 +126,42 @@
 //     return sonuc
 // }
 
-let metin = "Şuanda Yalova'da JAvascript eğitimi çekmekteyim.";
+// let metin = "Şuanda Yalova'da JAvascript eğitimi çekmekteyim.";
 
-let harf = prompt("harf giriniz");
-let sonuc = bul(harf);
-alert("Harf sayısı:" + sonuc);
+// let harf = prompt("harf giriniz");
+// let sonuc = bul(harf);
+// alert("Harf sayısı:" + sonuc);
 
-function bul(harf) {
-    let toplam = 0;
-    for(let i = 0; i<metin.length; i++){
-        if(metin.charAt(i).toLowerCase()===harf.toLowerCase()){
-            toplam+=1;
-        }
+// function bul(harf) {
+//     let toplam = 0;
+//     for(let i = 0; i<metin.length; i++){
+//         if(metin.charAt(i).toLowerCase()===harf.toLowerCase()){
+//             toplam+=1;
+//         }
     
-    }
-     return toplam;
-}
+//     }
+//      return toplam;
+// }
+
+//*Mükemmel sayı uygulaması
+//*6  -28 - 496
+//*6 = 1, 2, 3, 6 =12    6*2 ise  mükemmel sayıdır
+
+// isPerfectNumber(6);
+
+// function isPerfectNumber(number) {
+//     let toplam = 0
+//     for(let i = 2; i <= number/2; i++){
+//         if(number%i == 0){
+//             toplam+= i;
+//         }
+//     }
+//     toplam+= 1+number
+//     if(toplam == number*2){
+//         console.log("mükemmel sayıdır");
+//     }else{
+//         console.log("mükemmel sayı değildir");
+//     }
+// }
+
+//*49 ve 50. videoları güzelce anla
