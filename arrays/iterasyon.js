@@ -20,3 +20,23 @@ console.log(islemlerToplami());
 //*ne kadar sayida bulundugunu ana programa döndürecek bir
 //*fonksiyonu yazınız. Eger aranılan isimde bir ögrenci yok ise 
 //*fonksiyon aranılan ögrenci bulunamadı döndürmelidir.
+
+const ögrenciler = ['ahmet', 'mehmet', 'ismet', 'saffet', 'ahmet', 'nur', 'can', 'nur', 'mehmet', 'cem'];
+
+const ogrenciBul = function (isim){
+    let sayac = 0;
+    for (let i in ögrenciler){
+        if (ögrenciler[i] === isim){
+            sayac++;
+        }
+    }
+    
+    if (sayac === 0){
+        return `${isim} bulunamadi`;
+    }else{
+        return `${isim}, ${sayac} adet bulundu`;
+    }
+}
+
+let ogrIsim = prompt(`Ogrenci adini giriniz:`).toLocaleLowerCase();
+console.log(ogrenciBul(ogrIsim));
