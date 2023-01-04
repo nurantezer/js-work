@@ -40,3 +40,25 @@ const ogrenciBul = function (isim){
 
 let ogrIsim = prompt(`Ogrenci adini giriniz:`).toLocaleLowerCase();
 console.log(ogrenciBul(ogrIsim));
+
+//*FOR -OF LOOP
+//*For of döngüsü, for in döngüsünün bir çok veri yapısını kapsayacak
+//*sekilde güncellenmiş halidir. Bu döngüde dizi içerisindeki veriye 
+//*erişirken indisleme kullanmaya gerek yoktur.
+
+const ogrenciBulForOf = function(isim){
+    let sayac = 0;
+    for (let ögrenci of ögrenciler){
+        ögrenci === isim ? sayac++ : null //!Ternary
+        //!Short-circuit yöntemi : && => koşul doğru ise ifadeyi çalıştır.
+        // ögrenci === isim && sayac++
+        //!Short-circuit yöntemi: || => koşul yalnış ise ifadeyi çalıştır.
+        // ögrenci === isim || sayac --;  
+    }
+    return !sayac ? `${isim} bulunamdi` : `${isim}, ${sayac} adet bulundu`
+    // return sayac ? `${isim}, ${sayac} adet bulundu` : `${isim} bulunamadı`;
+
+}
+
+let ogrName = prompt(`Ogrenci adini giriniz:`).toLocaleLowerCase();
+console.log(ogrenciBulForOr(ogrName));
