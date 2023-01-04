@@ -97,3 +97,23 @@ console.log(ogrenciBulForOr(ogrName));
     dizi[indis] = deger +10;
   })
   console.log(fiyatlar);
+
+  //*MAP METHOD
+
+  //*ÖRNEK: İsimler disinin içerisindeki her ismi büyük harf olarak yeni bir diziye saklayalım
+
+  const isimler = ["Ahmet", "mehmet", "ismet", "SAFFET", "Can", "Canan", "Cavidan",]
+
+  console.log(isimler);
+  console.log(isimler.map((isim) => isim.toLocaleUpperCase()));
+
+  const kucukIsimler = isimler.map((isim) => isim.toLowerCase());
+  console.log(kucukIsimler);
+
+  //*Örnek
+
+  const buyukIsimler = isimler.map((isim, i, dizi) => {
+    dizi[i] = isim.toLocaleUpperCase();//! orjinal diziyi değiştirdik.
+    return isim.toLocaleUpperCase();
+  })
+  console.log(buyukIsimler);
