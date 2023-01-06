@@ -148,3 +148,15 @@ prices.forEach((p, i, arr) => {
   arr[i] = Math.trunc(p * 1.1);
 });
 console.log(prices);
+
+//*MAP METHOD
+
+//* Bir dizideki tüm isimleri BÜYÜK harfe dönüştüren uygulamayı yazınız
+
+let names = ["mustafa", "murat", "ahmet", "mustafa", "ayşe", "canan"];
+
+const upperNames = names.map((name) => name.toLocaleUpperCase());
+console.log(upperNames);
+console.log(names);
+
+console.log(names.map((name) => name.toLocaleUpperCase()));
