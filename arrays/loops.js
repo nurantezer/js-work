@@ -23,3 +23,41 @@ for (let j = 0; j < arr.length; j++) {
 }
 console.log(negatives);
 console.log(positives);
+
+//*FOR IN LOOP
+
+//*SORU: student dizisinde ögrenci isimleri saklanmaktadır. Ögrencileri
+//*aramamızı sağlayacak ve aranılan öğrenciden ne kadar sayıda bulunduğunu
+//*ana programa döndürecek bir fonksiyonu yazınız. Eger aranılan isimde
+//*bir öğrenci yok ise fonsksiyon "ogrenci bulunamadı" döndürmelidir.
+
+const students = [
+  "ahmet",
+  "mehmet",
+  "ismet",
+  "feyza",
+  "ahmet",
+  "feyza",
+  "can",
+  "mehmet",
+  "cem",
+];
+
+const findStudent = (name) => {
+  let counter = 0;
+  for (let i in students) {
+    if (name.toLowerCase() === students[i]) {
+      counter++;
+    }
+  }
+
+  if (counter === 0) {
+    return `${name} can not be found`;
+  } else {
+    return `${name} found ${counter} times`;
+  }
+};
+
+console.log(findStudent("MehMet"));
+console.log(findStudent("ismet"));
+console.log(findStudent("feyza"));
