@@ -61,3 +61,19 @@ const findStudent = (name) => {
 console.log(findStudent("MehMet"));
 console.log(findStudent("ismet"));
 console.log(findStudent("feyza"));
+
+//*  FOR OF
+
+//*for of döngüsü, for in döngüsünün bir çok veri yapısını kapsayacak sekilde güncellenmiş halidir. Bu döngüde dizi içerisindeki veriye erişirken indisleme kullanmaya gerek yoktur.
+
+const findStudentForOf = (name) => {
+  let counter = 0;
+  for (let student of students) {
+    student === name.toLowerCase() && counter++;
+  }
+  return !counter
+    ? `${name} can not be found`
+    : `${name} found ${counter} times`;
+};
+
+console.log(findStudentForOf("Mehmet"));
