@@ -56,3 +56,21 @@
 // console.log(JSON.stringify(worker));
 
 //*Object Metotları
+
+const personel = {
+  name: "can",
+  surname: "canan",
+  dob: "1990",
+  salary: 10000,
+  job: "developer",
+  drivingLicence: false,
+  calculateAge: function () {
+    return new Date().getFullYear() - this.dob;
+  },
+  summary: function () {
+    return `${this.name} is ${this.calculateAge()} years old.`;
+  },
+};
+console.log(personel.dob);
+console.log("age:", personel.calculateAge());
+console.log(personel.summary());
