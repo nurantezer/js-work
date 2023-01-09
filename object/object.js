@@ -43,3 +43,14 @@ worker["languages"].forEach((lang) => console.log(lang));
 
 const upperCaseLangs = worker["languages"].map((l) => l.toUpperCase());
 console.log(upperCaseLangs);
+
+worker.nationality = "T.C";
+console.log(worker);
+
+const person = worker;
+person.dob = 2000;
+console.log({ worker });
+console.log({ person });
+
+let deepCopyOfWorker = JSON.parse(JSON.stringify(worker));
+console.log(JSON.stringify(worker));
