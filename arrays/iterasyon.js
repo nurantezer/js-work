@@ -182,3 +182,12 @@ console.log(moreThan10000);
 
 const range = salaries.filter((s) => s >= 6000 && s <= 20000);
 console.log(range);
+
+//*CHAINING (PIPELINE)
+
+//*Maaşı 9000 den az olanlara %10 zam yaparak bu degerleri yeni diziye saklayalım
+
+const lessThan9000Inc = salaries
+  .filter((s) => s < 9000)
+  .map((s) => Math.trunc(s * 1.1));
+console.log(lessThan9000Inc);
