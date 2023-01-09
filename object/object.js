@@ -28,29 +28,31 @@
 // console.log(this);
 // console.log(window.Personel);
 
-const worker = {
-  name: "Can",
-  surname: "Canan",
-  age: 33,
-  languages: ["C++", "Go", "Java", "Javascript"],
-  salary: 10000,
-};
-console.log(worker);
+// const worker = {
+//   name: "Can",
+//   surname: "Canan",
+//   age: 33,
+//   languages: ["C++", "Go", "Java", "Javascript"],
+//   salary: 10000,
+// };
+// console.log(worker);
 
-worker.age += 1;
+// worker.age += 1;
 
-worker["languages"].forEach((lang) => console.log(lang));
+// worker["languages"].forEach((lang) => console.log(lang));
 
-const upperCaseLangs = worker["languages"].map((l) => l.toUpperCase());
-console.log(upperCaseLangs);
+// const upperCaseLangs = worker["languages"].map((l) => l.toUpperCase());
+// console.log(upperCaseLangs);
 
-worker.nationality = "T.C";
-console.log(worker);
+// worker.nationality = "T.C";
+// console.log(worker);
 
-const person = worker;
-person.dob = 2000;
-console.log({ worker });
-console.log({ person });
+// const person = worker;
+// person.dob = 2000;
+// console.log({ worker });
+// console.log({ person });
 
-let deepCopyOfWorker = JSON.parse(JSON.stringify(worker));
-console.log(JSON.stringify(worker));
+// let deepCopyOfWorker = JSON.parse(JSON.stringify(worker));
+// console.log(JSON.stringify(worker));
+
+//*Object Metotları
