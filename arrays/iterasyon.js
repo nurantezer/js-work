@@ -172,22 +172,39 @@
 // const dolarPrices = tlPrices.map((tl) => Number((tl / dolar).toFixed(2)));
 // console.log(euroPrices, dolarPrices);
 
-//*FILTER METHOD
+// //*FILTER METHOD
 
-//*Örnek: Maaşı 10000'den büyük olanları ayri bir diziye saklayalım
+// //*Örnek: Maaşı 10000'den büyük olanları ayri bir diziye saklayalım
 
+// const salaries = [5500, 8000, 6500, 9000, 10000, 15000, 25000];
+// const moreThan10000 = salaries.filter((s) => s >= 10000);
+// console.log(moreThan10000);
+
+// const range = salaries.filter((s) => s >= 6000 && s <= 20000);
+// console.log(range);
+
+// //*CHAINING (PIPELINE)
+
+// //*Maaşı 9000 den az olanlara %10 zam yaparak bu degerleri yeni diziye saklayalım
+
+// const lessThan9000Inc = salaries
+//   .filter((s) => s < 9000)
+//   .map((s) => Math.trunc(s * 1.1));
+// console.log(lessThan9000Inc);
+
+//*REDUCE METHOD
 const salaries = [5500, 8000, 6500, 9000, 10000, 15000, 25000];
-const moreThan10000 = salaries.filter((s) => s >= 10000);
-console.log(moreThan10000);
 
-const range = salaries.filter((s) => s >= 6000 && s <= 20000);
-console.log(range);
+const totalSalary = salaries.reduce((t, s) => t + s);
+console.log("total:", totalSalary);
 
-//*CHAINING (PIPELINE)
+//*Örnek Bir firma, 9000 tlden az olan maaşlara %10 zam yapmak istiyor ve
+//*zam yapılan bu kişilere toplam kaç tl ödeneceğini bilmek istiyor.
+//*İlgili programı yazınız
 
-//*Maaşı 9000 den az olanlara %10 zam yaparak bu degerleri yeni diziye saklayalım
-
-const lessThan9000Inc = salaries
+const sumOfRAisedSalaries = salaries
   .filter((s) => s < 9000)
-  .map((s) => Math.trunc(s * 1.1));
-console.log(lessThan9000Inc);
+  .map((s) => s * 1.1)
+  .reduce((t, s) => t + s, 0);
+
+console.log(sumOfRAisedSalaries);
