@@ -208,3 +208,19 @@ const sumOfRAisedSalaries = salaries
   .reduce((t, s) => t + s, 0);
 
 console.log(sumOfRAisedSalaries);
+
+//*OTHERS
+
+const ages = [18, 22, 78, 34, 78, 79, 15];
+const check = ages.every((age) => age >= 18);
+check ? console.log("all ages are over 18") : console.log("sum are under 18");
+
+const over80 = ages.some((a) => a >= 80);
+console.log(over80);
+
+const ageBigThan30First = ages.find((age) => age >= 30);
+const ageBigThan30Last = ages.findLast((age) => age >= 30);
+console.log(ageBigThan30First, ageBigThan30Last);
+
+const foundIndex = ages.findIndex((age) => age > 78);
+console.log(foundIndex);
