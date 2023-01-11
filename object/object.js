@@ -136,11 +136,52 @@ const people = {
 // Object.keys(people).forEach((p) => console.log(p));
 // Object.values(people).forEach((p) => console.log(p.name));
 
-Object.values(people)
-  .filter((p) => p.job === "developer")
-  .forEach((p) => console.log(p.dob));
+// Object.values(people)
+//   .filter((p) => p.job === "developer")
+//   .forEach((p) => console.log(p.dob));
 
-const dobs = Object.values(people)
-  .filter((p) => p.job === "developer")
-  .map((p) => p.dob);
-console.log(dobs);
+// const dobs = Object.values(people)
+//   .filter((p) => p.job === "developer")
+//   .map((p) => p.dob);
+// console.log(dobs);
+
+// const team = [
+//   { name: "josh", surname: "adams", job: "developer", age: 30 },
+//   { name: "mary", surname: "bary", job: "tester", age: 22 },
+//   { name: "hazel", surname: "nut", job: "developer", age: 20 },
+// ];
+// console.log(team);
+// console.log(team[0]);
+
+// team.push({ name: "ahmet", surname: "yılmaz", job: "developer", age: 22 });
+// console.log(team);
+
+//*team dizisindeki jobları tektek yazdırın
+team.forEach((p) => console.log(p.job));
+
+//*ageleri bir arttırarak yeni bir dizieye saklayınız
+const agesIncByOne = team.map((x) => x.age + 1);
+console.log(agesIncByOne);
+
+//*name ve surnameleri birleştirip büyük harfe ceviren ve bunu fullName keyi olarak saklayan, aynı zamanda age degerlerini 5 arttırarak age keyine saklayan ve oluşan diziyi döndüren kodu yazınız
+
+const teamFullName = team.map((p) => {
+  return {
+    fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
+    age: p.age + 5,
+  };
+});
+console.log(teamFullName);
+
+const teamFullName = team.map((p) => ({
+  fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
+  age: p.age + 5,
+}));
+console.log(teamFullName);
+
+//*teamFullName dizisindeki 30 yaşından küçük ve eşit olanların isimlerini diziye saklayınız
+
+const teamUnder22 = teamFullName
+  .fiter((p) => p.age < 30)
+  .map((p) => p.fullName);
+console.log(teamUnder22);
