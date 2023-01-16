@@ -185,3 +185,38 @@ const teamUnder22 = teamFullName
   .fiter((p) => p.age < 30)
   .map((p) => p.fullName);
 console.log(teamUnder22);
+let array = "erhan tezer".split("");
+console.log(array);
+let ters = array.reverse();
+console.log(ters);
+let birles = ters.join("");
+console.log(birles);
+
+let avengers = ["Iron Man", "Captain America", "Black Widow", "Hulk"];
+// console.log(avengers.splice(2, 2, "Thor", "Hawkeye"));
+// console.log(avengers);
+// console.log(avengers.slice(1, 3));
+
+let fullStack = {
+  languages: ["JavaScript", "React", "HTML"],
+  jira: true,
+  gitHub: true,
+  difficulty: 8,
+};
+console.log(fullStack.languages[0]);
+
+for (let v in fullStack.languages) {
+  console.log(v);
+}
+
+const myCar = {
+  make: "ford",
+  model: "Mustang",
+  year: 1965,
+  color: "Black",
+};
+myCar.age = function (current) {
+  console.log(current - this.year);
+};
+myCar.age(new Date().getDay());
+console.log(new Date().getHours());
