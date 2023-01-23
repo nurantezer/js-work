@@ -37,21 +37,21 @@
 // const addBtnType = document.querySelector("input[type='button']");
 // console.log(addBtnType.value);
 
-const lists = document.querySelectorAll("ul li"); //? tagname
-console.log(lists); //? Nodelist
+// const lists = document.querySelectorAll("ul li"); //? tagname
+// console.log(lists); //? Nodelist
 
-lists.forEach((li) => console.log(li.innerText));
+// lists.forEach((li) => console.log(li.innerText));
 
-console.log(
-  document.querySelectorAll("section.item-list ul li:nth-child(4)")[0].innerText
-);
+// console.log(
+//   document.querySelectorAll("section.item-list ul li:nth-child(4)")[0].innerText
+// );
 
-console.log(
-  document.querySelector("section.item-list ul li:nth-child(4)").innerText
-);
+// console.log(
+//   document.querySelector("section.item-list ul li:nth-child(4)").innerText
+// );
 
-document.querySelector("section.item-list ul li:nth-child(4)").innerHTML =
-  "<p>Paragraf</p>";
+// document.querySelector("section.item-list ul li:nth-child(4)").innerHTML =
+//   "<p>Paragraf</p>";
 
 
 
