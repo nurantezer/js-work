@@ -114,17 +114,66 @@ let data = [3, 1, 5, 7, 8, 910, 22, 3];
 // data = data.sort((a, b) => b - a).join("~~ ");
 // console.log(data);
 
-console.log(numbers.toString());
+// console.log(numbers.toString());
 
-const cars = ["BMW", "mercedes", "fiat", "anadol"];
-console.log(cars.slice(2, 3));
-console.log(cars.slice(2));
+// const cars = ["BMW", "mercedes", "fiat", "anadol"];
+// console.log(cars.slice(2, 3));
+// console.log(cars.slice(2));
 
-const newCars = cars.slice(3, 4);
-console.log(newCars, cars);
+// const newCars = cars.slice(3, 4);
+// console.log(newCars, cars);
 
-const message = ["The weather", "is", "very", "nice"];
-const now = [new Date().toLocaleString()];
+// const message = ["The weather", "is", "very", "nice"];
+// const now = [new Date().toLocaleString()];
 
-const concattedMsg = message.concat(now);
-console.log(concattedMsg);
+// const concattedMsg = message.concat(now);
+// console.log(concattedMsg);
+
+const meslekler = ["öğretmen", "doktor","mühendis","polis"]
+// console.log(meslekler.length);
+const bos = []
+// console.log(bos);
+console.log(meslekler[0]);
+const sonEleman = meslekler[meslekler.length-1]
+console.log(sonEleman);
+meslekler[0] = "avukat"
+console.log(meslekler);
+
+// console.log(meslekler.pop());
+// console.log(meslekler);
+// console.log(meslekler.push("aa"));
+// console.log(meslekler);
+
+console.log(meslekler.unshift("dd"));
+console.log(meslekler);
+console.log(meslekler.shift());
+console.log(meslekler);
+
+meslekler.splice(1,0,"sss")
+console.log(meslekler);
+console.log(meslekler.includes("doktor"));
+
+const grades = [55, 77, 23, 89, 100, 44, 33];
+sum = 0;
+
+for(let i = 0; i < grades.length; i++){
+    sum += grades[i]
+    
+}
+console.log((sum/grades.length).toFixed(2));
+
+const arr = [-5, 15, 22, -4, 45, 78];
+let negative = [];
+let positive = [];
+for(let i = 0; i < arr.length; i++){
+    if(arr[i] < 0){
+        negative.push(arr[i])
+    }else{
+        positive.push(arr[i])
+    }
+}
+console.log(positive);
+
+const prices = [100, 250, 50, 89];
+
+
