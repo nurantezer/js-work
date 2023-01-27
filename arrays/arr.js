@@ -64,4 +64,4 @@ console.log(k);
 const m = sayilar.reduce((a,b) => a+b);
 console.log(m); //*toplama yapuyoruz maaşlar mesela
 const p = ogrenciler.map((item) => item.yas).sort((x, y) => x - y);
-console.log(a); //*anla burayı
+console.log(p); //*anla burayı
