@@ -61,4 +61,12 @@ const showGithubUsers = (users) => {
         <img class= "w-25 mb-4" src=${user.avatar.url} alt=""/>`
     } )
 }
-
+// const getUsers = asyncfunction(){
+//     const res=await fetch("url")
+//     const data = await res.json()
+    //    updateDOM(data)
+// }
+//*hangi apiden veri cekiyorsam dönüş değerine bakmam lazım burada mesela articles dan çekiyor,data da başka birşey
+//*de yazabilirdi.
+//*node.js tabanlı uygulamalarda .env(environment)-gitignore yapılıp saklanır
+https://newsapi.org/v2/top-headlines?country=us&apiKey=b8f4e7e8a30e4be9919e6e131c6d63c4
