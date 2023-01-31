@@ -12,7 +12,7 @@
 //? Bir parent class'in degisken ve fonksiyonelliği extends
 //? keyword'u ile child class'a gecmektedir.(INHERITANCE)
 
-class Book {
+class Book {                              //*class ES6dan geldi
   constructor(title, author, year) {
     this.title = title;
     this.author = author;
@@ -37,7 +37,7 @@ console.log(book1);
 //? Sub-Class tanimlamasi (Inheritance)
 class Magazine extends Book {
   constructor(title, author, year, month) {
-    //! Book'un constructor'i cagrildi
+    //! Book'un constructor'i cagrildi new dediğimde consctur çağırılıyor
     super(title, author, year); //! Book'un prototpye kopyalnmis oldu
     this.month = month;
   }
@@ -46,3 +46,7 @@ class Magazine extends Book {
 const mag1 = new Magazine("Kasagi", "Omer Seyfettin", 1940, "Nov");
 console.log(mag1);
 console.log(mag1.getSummary());
+
+//*Motoru çizip üretiyoruz oopnin mantığı bu
+//*Polimorfizimde anneden gelen özellik mesela iyi yemek yapmak çocuğa gemiş am annede olmayan tatlı,pasta özelliği 
+//*eklenebiliyor bu mantık var
