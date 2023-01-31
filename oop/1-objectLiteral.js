@@ -3,6 +3,8 @@
 //* ===========================================
 
 //* Object Literals
+//*Objelere dayalı program
+
 
 const book1 = {
   title: "The Brothers Karamazov",
@@ -33,3 +35,4 @@ console.log(book2.getSummary());
 //? Ayrica programcilik yaklasimi acisindan da cok tekrar icerdigi icin uygun degildir.
 //? (DRY - Dont Repeat Yourself)
 //? Alternatif Cozum: Object Oriented Programming (ES5 and ES6)
+//*prototype-based-programing mesela getSummaryi bir yere koyup lazım olduğunda ordan çağırmak
