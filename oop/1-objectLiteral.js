@@ -36,3 +36,5 @@ console.log(book2.getSummary());
 //? (DRY - Dont Repeat Yourself)
 //? Alternatif Cozum: Object Oriented Programming (ES5 and ES6)
 //*prototype-based-programing mesela getSummaryi bir yere koyup lazım olduğunda ordan çağırmak
+//*ES6 yı diğer programların klass yapısına uyumlu olsun diye yapmışlar
+ 
