@@ -18,14 +18,15 @@ function Book(title, author, year) {
   };
 }
 
+//*obje olduğu için Book büyük yazıldı best practic
 //? new keyword'u Book Constructor'ini parametereler ile cagirmaktadir.
 //? Constructor ise Book nesnesinden bir ornek (instance) olusturmaktadir.
 //? Constructor, mantiksal bir ifade iken instance fiziksel bir olusum gibi dusunulebilir.
 //? Contructor'da tanimlanmis tum degisken ve fonksiyonlar olusturulan
 //? her bir instance'a da hayat bulmus olur.
 
-//? instance
-const book1 = new Book("Kasagi", "Omer Seyfettin", 1920);
+//? instance temsil edilen bir örnek
+const book1 = new Book("Kasagi", "Omer Seyfettin", 1920);         //*anahtar kelime new burda yapısı
 const book2 = new Book("Sinekli Bakkal", "H.Edip Adıvar", 1910);
 
 console.log(book1);
@@ -35,7 +36,8 @@ book1.price = 100;
 console.log(book1, book2);
 
 //! Eger yeni bir property veya fonksiyonu constructor'a eklemek istersek
-//! prototype'ı kullanabiliriz.
+//! prototype'ı kullanabiliriz.Burda yazıp yukarıdaki object consturactora eklemek için yaptım.Yoksa 35.satırdaki 
+//!gibi uğraşırım
 
 Book.prototype.getAge = function () {
   return new Date().getFullYear() - this.year;
@@ -46,6 +48,7 @@ Book.prototype.type = "novel";
 console.log(book1.getAge());
 console.log(book2.getAge());
 console.log(book2.type);
+
 
 //! Prototype, belirli bir Nesne'nin (Object) tum instance'larina
 //! kolay bir sekilde metotlar tanimlamaya izin vermektedir.
@@ -67,11 +70,11 @@ console.log(book1.__proto__);
 
 //? INHERITANCE (Kalitim - ES5)
 //?----------------------------------------------------------
-
+//*elimde olan booktan magazineyi türeteceğim
 //? Sub-Class
 function Magazine(title, author, year, month) {
   //* parent'in object constructorinin cagrilmasi
-  Book.call(this, title, author, year);
+  Book.call(this, title, author, year);    //*this ile diyorum ki hele son bana book objesini bir getir
   this.month = month;
 }
 
@@ -87,3 +90,6 @@ const mag1 = new Magazine("Scientific Research", "Einstein", 1905, "September");
 
 console.log(mag1);
 console.log(mag1.getAge());
+ 
+//*Neden prototype objelerin bellek yönetimini optimize etmek için kullanılıyor.Dezavantajı ise bu şekilde global
+//*saklama alanları güvenirlik açısından sıkıtı oluşturur.
