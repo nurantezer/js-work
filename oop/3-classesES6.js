@@ -48,5 +48,5 @@ console.log(mag1);
 console.log(mag1.getSummary());
 
 //*Motoru çizip üretiyoruz oopnin mantığı bu
-//*Polimorfizimde anneden gelen özellik mesela iyi yemek yapmak çocuğa gemiş am annede olmayan tatlı,pasta özelliği 
+//*Polimorfizimde anneden gelen özellik mesela iyi yemek yapmak çocuğa gemiş ama annede olmayan tatlı,pasta özelliği 
 //*eklenebiliyor bu mantık var
