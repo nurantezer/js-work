@@ -147,7 +147,7 @@ console.log(0 || null || undefined || false || 12);
 function selamla(ad, soyAd = "") {
   console.log(`Merhaba ${ad} ${soyAd}`);
 }
-/* selamla("Can", "Yilmaz");
+// selamla("Can", "Yilmaz");
 // selamla("Canan", "Ozturk");
 // selamla("Ayse");
 // selamla("John");
