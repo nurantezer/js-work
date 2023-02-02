@@ -138,10 +138,11 @@ let lastName = "Mentor";
 console.log(firstName + " " + lastName);
 console.log(`${firstName}        ${lastName}`);
 
-//* && : false arar
+
+//* && : false arar bulamazsa son bulduğu true değeri alır
 console.log(1 && 5 && "sezer" && 0 && null && 2);
 
-//* || : true arar
+//* || : true arar bulamazsa en sondaki falseyi alır çıkar
 console.log(0 || null || undefined || false || 12);
 
 function selamla(ad, soyAd = "") {
